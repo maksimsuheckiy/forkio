@@ -1,0 +1,131 @@
+.about-fork {
+  background: $purple url("../img/about-fork/about-product-bg.png") 47% 0 no-repeat;
+  background-size: cover;
+
+  &__header {
+    padding-top: 55px;
+
+    @media (min-width: $tablet) {
+      padding-top: 90px;
+    }
+
+    @media (min-width: $desktop) {
+      padding-top: 110px;
+    }
+  }
+
+  &__title {
+    @include section-title;
+    font-size: 36px;
+    line-height: 48px;
+    color: $white;
+
+    @media (min-width: $tablet) {
+      font-size: 42px;
+      line-height: 44px;
+    }
+
+    @media (min-width: $desktop) {
+      font-size: 48px;
+      line-height: 50px;
+    }
+  }
+
+  &__wrapper {
+    padding: 55px 0 40px;
+    text-align: center;
+    display: grid;
+    justify-content: center;
+    grid-gap: 40px;
+    align-items: flex-start;
+    margin: 0 auto;
+    max-width: 850px;
+
+    @media (min-width: $tablet) {
+      grid-template-columns: repeat(2,minmax(min-content, max-content));
+      justify-content: space-between;
+      grid-gap: 40px;
+      padding: 90px 0 70px;
+    }
+
+    @media (min-width: $desktop) {
+      grid-template-columns: repeat(3,minmax(min-content, max-content));
+      max-width: none;
+      padding: 80px 0 115px;
+    }
+  }
+
+  &__additional {
+    padding: 0 25px 20px;
+    margin: 0 auto;
+
+    &::after {
+      content: '';
+      display: block;
+      width: 100%;
+      max-width: 245px;
+      height: 2px;
+      background-color: #645766;
+      margin: 20px auto 0;
+
+      @media (min-width: $tablet) {
+        max-width: 555px;
+      }
+
+      @media (min-width: $desktop) {
+        max-width: 780px;
+      }
+    }
+  }
+
+  &__text {
+    @include section-text;
+    line-height: 21px;
+    color: #A291A5;
+    max-width: 890px;
+
+    @media (min-width: $tablet) {
+      max-width: 705px;
+    }
+
+    @media (min-width: $desktop) {
+      max-width: 890px;
+    }
+  }
+}
+
+.company {
+  padding-left: 15px;
+  padding-right: 15px;
+
+  @media (min-width: $desktop) {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  &__item {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-row-gap: 15px;
+    grid-template-rows: minmax(min-content, 65px);
+    grid-template-columns: minmax(200px, 355px);
+  }
+
+  &__logo {
+    width: 100%;
+  }
+
+  &__comment {
+    font-family: $font-lato;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 700;
+    font-style: italic;
+    color: $white;
+
+    @media (min-width: $tablet) {
+      font-size: 16px;
+    }
+  }
+}

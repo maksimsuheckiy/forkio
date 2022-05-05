@@ -1,0 +1,162 @@
+.advantages {
+    overflow: hidden;
+    padding-top: 32px;
+
+    @media (min-width: $tablet) {
+        padding: 62px 0 0 20px;
+    }
+
+    @media (min-width: $desktop) {
+        padding: 98px 0 33px;
+        background-color: #F4F4F4;
+    }
+
+    &__wrapper {
+        @media (min-width: $desktop) {
+            display: flex;
+        }
+    }
+
+    &__title {
+        @include section-title;
+        font-size: 32px;
+        line-height: 38px;
+        color: #8D81AC;
+        padding: 0 30px 36px;
+
+        &::before {
+            content: "<";
+        }
+
+        &::after {
+            content: ">";
+        }
+
+        @media (min-width: $tablet) {
+            font-size: 42px;
+            line-height: 44px;
+            padding: 0 0 50px;
+        }
+
+        @media (min-width: $desktop) {
+            font-size: 48px;
+            line-height: 50px;
+        }
+    }
+
+    &__title--main {
+        @media (min-width: $desktop) {
+            display: none;
+        }
+    }
+
+    &__title--hidden {
+        display: none;
+
+        @media (min-width: $desktop) {
+            display: block;
+            text-align: left;
+            padding: 0 0 19px 10px;
+        }
+    }
+
+    &__figure {
+        padding-bottom: 38px;
+
+        @media (min-width: $tablet) {
+            max-width: 768px;
+            display: flex;
+            margin: 0 auto;
+            padding-bottom: 60px;
+        }
+
+        @media (min-width: $desktop) {
+            padding-right: 50px;
+            padding-bottom: 35px;
+        }
+
+        &:last-child {
+            padding-bottom: 60px;
+
+            @media (min-width: $tablet) {
+                padding-bottom: 76px;
+            }
+
+            @media (min-width: $desktop) {
+                padding-bottom: 35px;
+            }
+        }
+    }
+
+    &__image {
+        margin: 0 auto;
+    }
+
+    &__figcaption {
+        max-width: 580px;
+        flex: 1;
+    }
+
+    &__heading {
+        font-family: $font-montserrat;
+        line-height: 16px;
+        text-align: center;
+        color: $dark-grey;
+        padding-bottom: 14px;
+
+        @media (min-width: $tablet) {
+            text-align: left;
+            line-height: 21px;
+        }
+    }
+
+    &__text {
+        @include section-text;
+        line-height: 21px;
+        color: #848E97;
+        padding: 0 15px;
+
+        @media (min-width: $tablet) {
+            font-family: $font-montserrat;
+            text-align: left;
+            padding: 0;
+        }
+
+        @media (min-width: $desktop) {
+            max-width: 406px;
+        }
+    }
+
+    &__screenshot {
+        display: block;
+        max-height: 381px;
+        position: relative;
+        left: -10px;
+
+        @media (min-width: $tablet) {
+            max-height: 519px;
+            padding-left: 38px;
+            margin-left: auto;
+            margin-right: 0;
+            left: 0;
+        }
+
+        @media (min-width: $desktop) {
+            padding: 0;
+            position: absolute;
+        }
+    }
+}
+
+.image-wrapper {
+    width: 111px;
+    margin: 0 auto 20px;
+
+    @media (min-width: $tablet) {
+        margin: 0 23px 0 0;
+    }
+}
+
+.screenshot-wrapper {
+    position: relative;
+}

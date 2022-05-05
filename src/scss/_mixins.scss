@@ -1,0 +1,36 @@
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin section-title {
+    font-family: $font-montserrat;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 auto;
+}
+
+@mixin section-text {
+    font-family: $font-lato;
+    font-size: 14px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+@mixin git-button {
+    font-family: $font-montserrat;
+    color: $dark-grey;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: bold;
+}
+
+@mixin dropdown-btn {
+    display: block;
+    position: absolute;
+    height: 3px;
+    background-color: $white;
+    transition-duration: .30s;
+    border-radius: 5px;
+}

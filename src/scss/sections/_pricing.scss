@@ -1,0 +1,208 @@
+.pricing {
+    background-color: $purple;
+    padding: 15px 0 12px;
+
+    @media (min-width: $tablet) {
+        padding: 88px 0 94px;
+        background: $purple url("../img/pricing/background.png") top center no-repeat;
+    }
+
+    @media (min-width: $desktop) {
+        padding: 114px 0 73px;
+        background: $purple url("../img/pricing/background.png");
+        background-size: cover;
+    }
+
+    &__title {
+        @include section-title;
+        font-size: 28px;
+        line-height: 42px;
+        color: $white;
+        padding-bottom: 32px;
+
+        @media (min-width: $tablet) {
+            font-size: 42px;
+            line-height: 44px;
+            padding-bottom: 39px;
+        }
+
+        @media (min-width: $desktop) {
+            font-size: 48px;
+            line-height: 50px;
+            padding-bottom: 61px;
+        }
+    }
+}
+
+.pricing-packages-container {
+    margin: 0 auto;
+
+    @media (min-width: $tablet) {
+        max-width: 399px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    @media (min-width: 600px) {
+        max-width: 580px;
+    }
+
+    @media (min-width: $desktop) {
+        max-width: 1115px;
+        flex-wrap: nowrap;
+    }
+}
+
+.price-package {
+    width: 257px;
+    margin: 0 auto 18px;
+    padding-bottom: 36px;
+    background-color: #5f516189;
+    font-family: $font-montserrat;
+    text-align: center;
+    text-transform: uppercase;
+    color: $white;
+
+    @media (min-width: $tablet) {
+        margin: 0 auto 30px;
+    }
+
+    @media (min-width: 600px) {
+        margin: 0 0 30px;
+    }
+
+    @media (min-width: $desktop) {
+        margin: 0 15px 0 0;
+        max-width: 257px;
+    }
+
+    &__title {
+        font-size: 24px;
+        line-height: 24px;
+        padding: 36px 0;
+        background-color: #695b6a;
+    }
+
+    &__price {
+        padding-top: 30px;
+        font-size: 60px;
+        line-height: 62px;
+    }
+
+    &__price--bold {
+        font-weight: bold;
+    }
+
+    &__period {
+        padding-top: 20px;
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    &__period::after {
+        content: "";
+        display: block;
+        margin: 38px auto 0;
+        width: 60px;
+        height: 5px;
+        background: #8D81AC;
+    }
+
+    &__description {
+        padding: 30px 0 36px;
+        font-size: 16px;
+        line-height: 18px;
+        text-transform: none;
+    }
+
+    &__description--additional {
+        display: block;
+        padding-top: 10px;
+    }
+
+    &__button {
+        display: block;
+        width: 163px;
+        border-radius: 25px;
+        padding: 15px 38px;
+        box-sizing: border-box;
+        margin: 0 auto;
+        font-size: 15px;
+        line-height: 15px;
+        background-color: #776b79;
+        color: $white;
+    }
+
+    &:first-child {
+        padding-bottom: 64px;
+
+        @media (min-width: 600px) {
+            margin-left: 42px;
+            padding-bottom: 36px;
+
+            .price-package__description {
+                padding: 30px 0 64px;
+            }
+        }
+
+        @media (min-width: $desktop) {
+            margin-left: 0;
+        }
+    }
+
+    &:nth-child(3) {
+
+        @media (min-width: 600px) {
+            margin-bottom: 0;
+        }
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+
+        @media (min-width: $desktop) {
+            margin: 0;
+        }
+    }
+}
+
+.agency {
+    width: 299px;
+    padding-bottom: 47px;
+    background-color: #483249;
+
+    @media (min-width: $desktop) {
+        max-width: 299px;
+    }
+
+    &__title {
+        padding: 43px 0;
+        background-color: #3f2d41;
+    }
+
+    &__price {
+        padding-top: 14px;
+        font-size: 82px;
+        line-height: 84px;
+    }
+
+    &__period {
+        padding-top: 16px;
+    }
+
+    &__period::after {
+        margin-top: 46px;
+    }
+
+    &__description {
+        padding: 40px 0 83px;
+    }
+
+    &__button {
+        width: 190px;
+        padding: 18.5px 48px;
+        background-color: #635164;
+    }
+}
